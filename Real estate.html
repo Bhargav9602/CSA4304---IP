@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Property Management System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1f4e5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #163a47;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #f4d35e;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #1f4e5f;
+        }
+
+        .properties {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .property {
+            width: 28%;
+            background-color: #f1f5f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .property h3 {
+            color: #1f4e5f;
+        }
+
+        .price {
+            color: #d35400;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #1f4e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #d35400;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1f4e5f;
+            color: white;
+        }
+
+        footer {
+            background-color: #163a47;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>REAL ESTATE PROPERTY MANAGEMENT</h1>
+    <p>Find Your Perfect Property</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#search">Search</a>
+    <a href="#booking">Enquiry</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="box">
+        <h2>Welcome to Prime Properties</h2>
+
+        <p>
+            Find residential and commercial properties for sale
+            and rent. Our property management system helps customers
+            easily search, compare and enquire about properties.
+        </p>
+    </section>
+
+    <!-- Search -->
+    <section id="search" class="box">
+        <h2>Search Property</h2>
+
+        <form>
+
+            <label>Location:</label><br>
+            <input type="text" placeholder="Enter city or location"><br>
+
+            <label>Property Type:</label><br>
+            <select>
+                <option>Select Property Type</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Villa</option>
+                <option>Office</option>
+                <option>Shop</option>
+                <option>Land</option>
+            </select><br>
+
+            <label>Purpose:</label><br>
+            <select>
+                <option>Buy</option>
+                <option>Rent</option>
+                <option>Lease</option>
+            </select><br>
+
+            <label>Budget:</label><br>
+            <select>
+                <option>Below ₹20 Lakhs</option>
+                <option>₹20 - ₹50 Lakhs</option>
+                <option>₹50 Lakhs - ₹1 Crore</option>
+                <option>Above ₹1 Crore</option>
+            </select><br>
+
+            <button type="submit">Search Property</button>
+
+        </form>
+    </section>
+
+    <!-- Properties -->
+    <section id="properties" class="box">
+        <h2>Featured Properties</h2>
+
+        <div class="properties">
+
+            <div class="property">
+                <h3>Luxury Apartment</h3>
+                <p>Location: Chennai</p>
+                <p>3 Bedrooms | 2 Bathrooms</p>
+                <p>Area: 1500 sq.ft</p>
+                <p class="price">₹75 Lakhs</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="property">
+                <h3>Modern Villa</h3>
+                <p>Location: Bangalore</p>
+                <p>4 Bedrooms | 3 Bathrooms</p>
+                <p>Area: 2500 sq.ft</p>
+                <p class="price">₹1.2 Crore</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="property">
+                <h3>Family House</h3>
+                <p>Location: Hyderabad</p>
+                <p>3 Bedrooms | 2 Bathrooms</p>
+                <p>Area: 1800 sq.ft</p>
+                <p class="price">₹65 Lakhs</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="property">
+                <h3>Commercial Office</h3>
+                <p>Location: Mumbai</p>
+                <p>5 Rooms | Parking Available</p>
+                <p>Area: 2200 sq.ft</p>
+                <p class="price">₹1.5 Crore</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="property">
+                <h3>Residential Land</h3>
+                <p>Location: Vijayawada</p>
+                <p>Corner Plot</p>
+                <p>Area: 2400 sq.ft</p>
+                <p class="price">₹35 Lakhs</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="property">
+                <h3>Rental Apartment</h3>
+                <p>Location: Chennai</p>
+                <p>2 Bedrooms | 2 Bathrooms</p>
+                <p>Area: 1100 sq.ft</p>
+                <p class="price">₹25,000 / Month</p>
+                <button>View Details</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Property Enquiry -->
+    <section id="booking" class="box">
+        <h2>Property Enquiry</h2>
+
+        <form>
+
+            <label>Customer Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Select Property:</label><br>
+            <select>
+                <option>Select Property</option>
+                <option>Luxury Apartment</option>
+                <option>Modern Villa</option>
+                <option>Family House</option>
+                <option>Commercial Office</option>
+                <option>Residential Land</option>
+                <option>Rental Apartment</option>
+            </select><br>
+
+            <label>Requirement:</label><br>
+            <select>
+                <option>Buy</option>
+                <option>Rent</option>
+                <option>Lease</option>
+            </select><br>
+
+            <label>Message:</label><br>
+            <textarea placeholder="Enter your requirements"></textarea><br>
+
+            <button type="submit">Submit Enquiry</button>
+
+        </form>
+    </section>
+
+    <!-- Property Details Table -->
+    <section class="box">
+        <h2>Property Information</h2>
+
+        <table>
+            <tr>
+                <th>Property ID</th>
+                <th>Property Name</th>
+                <th>Type</th>
+                <th>Location</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>P101</td>
+                <td>Luxury Apartment</td>
+                <td>Apartment</td>
+                <td>Chennai</td>
+                <td>₹75 Lakhs</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>P102</td>
+                <td>Modern Villa</td>
+                <td>Villa</td>
+                <td>Bangalore</td>
+                <td>₹1.2 Crore</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>P103</td>
+                <td>Family House</td>
+                <td>House</td>
+                <td>Hyderabad</td>
+                <td>₹65 Lakhs</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>P104</td>
+                <td>Commercial Office</td>
+                <td>Office</td>
+                <td>Mumbai</td>
+                <td>₹1.5 Crore</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+</div>
+
+<footer id="contact">
+    <h3>Prime Properties</h3>
+    <p>Email: primeproperties@example.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Real Estate Property Management System © 2026</p>
+</footer>
+
+</body>
+</html>
