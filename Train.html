@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Train Reservation System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #2c5282;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #1e3a5f;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1e88e5;
+            color: white;
+        }
+
+        .services li {
+            padding: 8px;
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Train Reservation System</h1>
+    <p>Book Your Train Ticket Quickly and Easily</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#search">Search Trains</a>
+    <a href="#trains">Trains</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="box">
+        <h2>Welcome</h2>
+        <p>
+            Welcome to the Online Train Reservation System.
+            Search trains, check availability and reserve your
+            seats online.
+        </p>
+    </section>
+
+    <!-- Search Train -->
+    <section id="search" class="box">
+        <h2>Search Trains</h2>
+
+        <form>
+            <label>From Station:</label><br>
+            <input type="text" placeholder="Enter departure station"><br>
+
+            <label>To Station:</label><br>
+            <input type="text" placeholder="Enter destination station"><br>
+
+            <label>Journey Date:</label><br>
+            <input type="date"><br>
+
+            <label>Class:</label><br>
+            <select>
+                <option>Select Class</option>
+                <option>First AC</option>
+                <option>Second AC</option>
+                <option>Third AC</option>
+                <option>Sleeper</option>
+                <option>General</option>
+            </select><br>
+
+            <button type="submit">Search Train</button>
+        </form>
+    </section>
+
+    <!-- Available Trains -->
+    <section id="trains" class="box">
+        <h2>Available Trains</h2>
+
+        <table>
+            <tr>
+                <th>Train No.</th>
+                <th>Train Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Fare</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>12601</td>
+                <td>Chennai Express</td>
+                <td>Chennai</td>
+                <td>Bangalore</td>
+                <td>06:00 AM</td>
+                <td>12:30 PM</td>
+                <td>₹650</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>12760</td>
+                <td>Charminar Express</td>
+                <td>Chennai</td>
+                <td>Hyderabad</td>
+                <td>06:10 PM</td>
+                <td>08:00 AM</td>
+                <td>₹850</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>12608</td>
+                <td>Lalbagh Express</td>
+                <td>Bangalore</td>
+                <td>Chennai</td>
+                <td>06:30 AM</td>
+                <td>01:00 PM</td>
+                <td>₹600</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>12622</td>
+                <td>Tamil Nadu Express</td>
+                <td>Chennai</td>
+                <td>Delhi</td>
+                <td>10:00 PM</td>
+                <td>07:00 AM</td>
+                <td>₹1200</td>
+                <td>Waiting List</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="box">
+        <h2>Passenger Reservation</h2>
+
+        <form>
+
+            <label>Passenger Name:</label><br>
+            <input type="text" placeholder="Enter passenger name"><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="1" placeholder="Enter age"><br>
+
+            <label>Gender:</label><br>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Train Number:</label><br>
+            <input type="text" placeholder="Enter train number"><br>
+
+            <label>Journey Date:</label><br>
+            <input type="date"><br>
+
+            <label>Travel Class:</label><br>
+            <select>
+                <option>First AC</option>
+                <option>Second AC</option>
+                <option>Third AC</option>
+                <option>Sleeper</option>
+                <option>General</option>
+            </select><br>
+
+            <label>Number of Passengers:</label><br>
+            <input type="number" min="1" max="6"><br>
+
+            <button type="submit">Reserve Ticket</button>
+
+        </form>
+    </section>
+
+    <!-- Services -->
+    <section class="box services">
+        <h2>Our Services</h2>
+
+        <ul>
+            <li>Online Train Search</li>
+            <li>Seat Availability Checking</li>
+            <li>Online Ticket Reservation</li>
+            <li>Passenger Information Management</li>
+            <li>Ticket Cancellation</li>
+            <li>PNR Status Checking</li>
+            <li>Online Payment</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: support@trainreservation.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Online Train Reservation System © 2026</p>
+</footer>
+
+</body>
+</html>
