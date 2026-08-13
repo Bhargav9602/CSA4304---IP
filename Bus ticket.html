@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #2c5282;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .welcome, .booking, .search, .services {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .welcome {
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e3a5f;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1e88e5;
+            color: white;
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bus Ticket Booking System</h1>
+    <p>Book Your Bus Ticket Easily and Quickly</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#buses">Buses</a>
+    <a href="#booking">Booking</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="welcome">
+        <h2>Welcome to Online Bus Booking</h2>
+        <p>
+            Search for buses, select your preferred bus and book
+            your ticket easily from anywhere.
+        </p>
+    </section>
+
+    <!-- Search -->
+    <section class="search">
+        <h2>Search Bus</h2>
+
+        <form>
+            <label>From:</label><br>
+            <input type="text" placeholder="Enter starting city"><br>
+
+            <label>To:</label><br>
+            <input type="text" placeholder="Enter destination"><br>
+
+            <label>Journey Date:</label><br>
+            <input type="date"><br>
+
+            <button type="submit">Search Bus</button>
+        </form>
+    </section>
+
+    <!-- Bus Details -->
+    <section id="buses">
+        <h2>Available Buses</h2>
+
+        <table>
+            <tr>
+                <th>Bus No</th>
+                <th>Bus Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Fare</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>B101</td>
+                <td>Express Travels</td>
+                <td>Chennai</td>
+                <td>Bangalore</td>
+                <td>08:00 AM</td>
+                <td>02:00 PM</td>
+                <td>₹650</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>B102</td>
+                <td>City Travels</td>
+                <td>Chennai</td>
+                <td>Hyderabad</td>
+                <td>07:00 PM</td>
+                <td>07:00 AM</td>
+                <td>₹900</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>B103</td>
+                <td>Green Line</td>
+                <td>Bangalore</td>
+                <td>Chennai</td>
+                <td>09:00 PM</td>
+                <td>05:00 AM</td>
+                <td>₹700</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>B104</td>
+                <td>Royal Travels</td>
+                <td>Hyderabad</td>
+                <td>Chennai</td>
+                <td>08:30 PM</td>
+                <td>08:00 AM</td>
+                <td>₹950</td>
+                <td>Full</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking">
+        <h2>Book Your Ticket</h2>
+
+        <form>
+
+            <label>Passenger Name:</label><br>
+            <input type="text" placeholder="Enter passenger name"><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="1" placeholder="Enter age"><br>
+
+            <label>Gender:</label><br>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Select Bus:</label><br>
+            <select>
+                <option>Express Travels - B101</option>
+                <option>City Travels - B102</option>
+                <option>Green Line - B103</option>
+            </select><br>
+
+            <label>Journey Date:</label><br>
+            <input type="date"><br>
+
+            <label>Seat Number:</label><br>
+            <select>
+                <option>Seat 1</option>
+                <option>Seat 2</option>
+                <option>Seat 3</option>
+                <option>Seat 4</option>
+                <option>Seat 5</option>
+            </select><br>
+
+            <button type="submit">Book Ticket</button>
+
+        </form>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <ul>
+            <li>Online Bus Ticket Booking</li>
+            <li>Easy Seat Selection</li>
+            <li>Multiple Bus Routes</li>
+            <li>Online Payment</li>
+            <li>Ticket Cancellation</li>
+            <li>Booking Confirmation</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: support@busbooking.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Bus Ticket Booking System © 2026</p>
+</footer>
+
+</body>
+</html>
