@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Cake Ordering System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f5;
+        }
+
+        header {
+            background-color: #b23a48;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #7f2835;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd6d6;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #b23a48;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            background-color: #b23a48;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #7f2835;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #b23a48;
+            color: white;
+        }
+
+        footer {
+            background-color: #7f2835;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Cake Ordering System</h1>
+    <p>Delicious Cakes Delivered to Your Doorstep</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#order">Order Cake</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="box">
+        <h2>Welcome to Sweet Cake Shop</h2>
+        <p>
+            Order delicious and freshly prepared cakes online for
+            birthdays, weddings, anniversaries and special occasions.
+        </p>
+    </section>
+
+    <!-- Cake List -->
+    <section id="cakes" class="box">
+        <h2>Our Cakes</h2>
+
+        <table>
+            <tr>
+                <th>Cake ID</th>
+                <th>Cake Name</th>
+                <th>Flavor</th>
+                <th>Weight</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>C101</td>
+                <td>Chocolate Cake</td>
+                <td>Chocolate</td>
+                <td>1 Kg</td>
+                <td>₹700</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>C102</td>
+                <td>Black Forest</td>
+                <td>Chocolate</td>
+                <td>1 Kg</td>
+                <td>₹650</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>C103</td>
+                <td>Red Velvet</td>
+                <td>Red Velvet</td>
+                <td>1 Kg</td>
+                <td>₹900</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>C104</td>
+                <td>Butterscotch Cake</td>
+                <td>Butterscotch</td>
+                <td>1 Kg</td>
+                <td>₹750</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>C105</td>
+                <td>Strawberry Cake</td>
+                <td>Strawberry</td>
+                <td>1 Kg</td>
+                <td>₹800</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="box">
+        <h2>Place Your Cake Order</h2>
+
+        <form>
+
+            <label>Customer Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Select Cake:</label><br>
+            <select>
+                <option>Select Cake</option>
+                <option>Chocolate Cake</option>
+                <option>Black Forest</option>
+                <option>Red Velvet</option>
+                <option>Butterscotch Cake</option>
+                <option>Strawberry Cake</option>
+            </select><br>
+
+            <label>Cake Weight:</label><br>
+            <select>
+                <option>500 Grams</option>
+                <option>1 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+            </select><br>
+
+            <label>Delivery Date:</label><br>
+            <input type="date"><br>
+
+            <label>Delivery Time:</label><br>
+            <input type="time"><br>
+
+            <label>Delivery Address:</label><br>
+            <textarea placeholder="Enter delivery address"></textarea><br>
+
+            <label>Message on Cake:</label><br>
+            <input type="text" placeholder="Example: Happy Birthday"><br>
+
+            <label>Payment Method:</label><br>
+            <select>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Debit Card</option>
+                <option>Credit Card</option>
+            </select><br>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+    </section>
+
+    <!-- Offers -->
+    <section id="offers" class="box">
+        <h2>Special Offers</h2>
+
+        <ul>
+            <li>10% Off on Birthday Cakes</li>
+            <li>15% Off on Wedding Cakes</li>
+            <li>Free Delivery on Orders Above ₹1000</li>
+            <li>Special Combo Cake Packages</li>
+            <li>Custom Cake Designs Available</li>
+        </ul>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: sweetcake@example.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Online Cake Ordering System © 2026</p>
+</footer>
+
+</body>
+</html>
