@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedCare Hospital Management System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f8fc;
+        }
+
+        header {
+            background-color: #087f8c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #05668d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #087f8c;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            background-color: #087f8c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #05668d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #087f8c;
+            color: white;
+        }
+
+        footer {
+            background-color: #05668d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MedCare Hospital</h1>
+    <p>Quality Healthcare | Expert Doctors | Patient Care</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#services">Services</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="box">
+        <h2>Welcome to MedCare Hospital</h2>
+
+        <p>
+            MedCare Hospital provides quality medical care with
+            experienced doctors, modern facilities and advanced
+            healthcare services.
+        </p>
+
+        <p>
+            Our hospital is committed to providing safe, affordable
+            and patient-friendly healthcare.
+        </p>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="box">
+        <h2>Our Doctors</h2>
+
+        <table>
+            <tr>
+                <th>Doctor ID</th>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Experience</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>D101</td>
+                <td>Dr. Ravi Kumar</td>
+                <td>Cardiologist</td>
+                <td>15 Years</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>D102</td>
+                <td>Dr. Priya Sharma</td>
+                <td>Dermatologist</td>
+                <td>10 Years</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>D103</td>
+                <td>Dr. Arjun Reddy</td>
+                <td>Orthopedic</td>
+                <td>12 Years</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>D104</td>
+                <td>Dr. Sneha Rao</td>
+                <td>Pediatrician</td>
+                <td>8 Years</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="box">
+        <h2>Hospital Services</h2>
+
+        <ul>
+            <li>24/7 Emergency Services</li>
+            <li>Outpatient Department (OPD)</li>
+            <li>Inpatient Services</li>
+            <li>Pharmacy</li>
+            <li>Laboratory and Diagnostic Services</li>
+            <li>ICU Facilities</li>
+            <li>Ambulance Services</li>
+            <li>Health Checkup Packages</li>
+        </ul>
+    </section>
+
+    <!-- Appointment -->
+    <section id="appointment" class="box">
+        <h2>Book an Appointment</h2>
+
+        <form>
+
+            <label>Patient Name:</label><br>
+            <input type="text" placeholder="Enter patient name"><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="1" placeholder="Enter age"><br>
+
+            <label>Gender:</label><br>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Select Department:</label><br>
+            <select>
+                <option>Select Department</option>
+                <option>Cardiology</option>
+                <option>Dermatology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>General Medicine</option>
+            </select><br>
+
+            <label>Select Doctor:</label><br>
+            <select>
+                <option>Dr. Ravi Kumar</option>
+                <option>Dr. Priya Sharma</option>
+                <option>Dr. Arjun Reddy</option>
+                <option>Dr. Sneha Rao</option>
+            </select><br>
+
+            <label>Appointment Date:</label><br>
+            <input type="date"><br>
+
+            <label>Appointment Time:</label><br>
+            <input type="time"><br>
+
+            <label>Symptoms / Message:</label><br>
+            <textarea placeholder="Enter your symptoms or message"></textarea><br>
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>Contact MedCare Hospital</h3>
+    <p>Address: Main Road, City Center</p>
+    <p>Email: medcare@example.com</p>
+    <p>Emergency: 9876543210</p>
+    <p>MedCare Hospital © 2026</p>
+</footer>
+
+</body>
+</html>
