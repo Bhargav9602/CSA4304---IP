@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Beauty Parlour</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+        }
+        header {
+            background-color: #8e3a59;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #5f263d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #ffd1df;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #8e3a59;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #c44f78;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #8e3a59;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #c44f78;
+            color: white;
+        }
+
+        footer {
+            background-color: #5f263d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Beauty Parlour</h1>
+    <p>Look Beautiful, Feel Confident</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book Appointment</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home" class="box">
+        <h2>Welcome to Our Beauty Parlour</h2>
+        <p>
+            Welcome to our online beauty parlour booking system.
+            Choose your favourite beauty service and book an
+            appointment easily from anywhere.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="box">
+        <h2>Our Beauty Services</h2>
+
+        <table>
+            <tr>
+                <th>Service ID</th>
+                <th>Service Name</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>S101</td>
+                <td>Hair Cut</td>
+                <td>30 Minutes</td>
+                <td>₹300</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>S102</td>
+                <td>Hair Spa</td>
+                <td>60 Minutes</td>
+                <td>₹800</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>S103</td>
+                <td>Facial</td>
+                <td>45 Minutes</td>
+                <td>₹600</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>S104</td>
+                <td>Manicure</td>
+                <td>40 Minutes</td>
+                <td>₹500</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>S105</td>
+                <td>Bridal Makeup</td>
+                <td>120 Minutes</td>
+                <td>₹5000</td>
+                <td>Available</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="box">
+        <h2>Book an Appointment</h2>
+
+        <form>
+
+            <label>Customer Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br>
+
+            <label>Select Service:</label><br>
+            <select>
+                <option>Select Service</option>
+                <option>Hair Cut</option>
+                <option>Hair Spa</option>
+                <option>Facial</option>
+                <option>Manicure</option>
+                <option>Bridal Makeup</option>
+            </select><br>
+
+            <label>Appointment Date:</label><br>
+            <input type="date"><br>
+
+            <label>Appointment Time:</label><br>
+            <input type="time"><br>
+
+            <label>Payment Method:</label><br>
+            <select>
+                <option>Cash</option>
+                <option>UPI</option>
+                <option>Debit Card</option>
+                <option>Credit Card</option>
+            </select><br>
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+    </section>
+
+    <!-- Offers -->
+    <section id="offers" class="box">
+        <h2>Special Offers</h2>
+
+        <ul>
+            <li>20% Off on Hair Spa</li>
+            <li>15% Off on Facial</li>
+            <li>10% Off on Manicure</li>
+            <li>Special Bridal Makeup Packages</li>
+            <li>Combo Beauty Packages Available</li>
+        </ul>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: beautyparlour@example.com</p>
+    <p>Phone: 9876543210</p>
+    <p>Online Beauty Parlour © 2026</p>
+</footer>
+
+</body>
+</html>
